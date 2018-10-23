@@ -13,16 +13,16 @@ def draw():
     print (x)
     if x >= 640:
         x = 0
-    x = x + 2
+    x = x + 0.5
     if y >= 640:
         y = 0
-    y = y + 2
+    y = y + 0.5
     if balloon >= 640:
         balloon = 0
     balloon = balloon + 1
     if bus >= 640:
         bus = 0
-    bus = bus + 1
+    bus = bus + 2
     background (135, 206, 250)
     noStroke()      #remove border of outline
     fill ("#FFFFFF")
@@ -57,6 +57,22 @@ def draw():
     fill ("#008000")
     rect (0, 390, 2000, 100)
     #grass
+    
+    fill ("#808080")
+    rect (0, 400, 2000, 50)
+    fill ("#FFFFFF")
+    rect (0, 415, 40, 10)
+    rect (60, 415, 40, 10)
+    rect (120, 415, 40, 10)
+    rect (180, 415, 40, 10)
+    rect (240, 415, 40, 10)
+    rect (300, 415, 40, 10)
+    rect (360, 415, 40, 10)
+    rect (420, 415, 40, 10)
+    rect (480, 415, 40, 10)
+    rect (540, 415, 40, 10)
+    rect (600, 415, 40, 10)
+    #road
     
     fill ("#F7CF88")
     rect (220, 260, 220, 130)
@@ -110,5 +126,5 @@ def draw():
     rect (bus+120, 337, 35, 35)
     rect (bus+160, 337, 35, 35)
     #Bus    
-    
+
     #(x, y, width, height)
