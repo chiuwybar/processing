@@ -18,13 +18,20 @@ def draw():
         y = 0
     y = y + 0.5
     if balloon >= 640:
-        balloon = 0
+        balloon = -300
     balloon = balloon + 1
-    if bus >= 640:
-        bus = 0
+    if bus >= 700:
+        bus = -300
     bus = bus + 2
     background (135, 206, 250)
     noStroke()      #remove border of outline
+    
+   #(x, y, width, height)
+    
+    fill ("#FFFF00")
+    ellipse (10, 10, 200, 200)
+    #sun
+    
     fill ("#FFFFFF")
     ellipse (x, 70, 80, 80)
     ellipse (x+40, 70, 80, 80)
@@ -40,6 +47,7 @@ def draw():
     ellipse (y+290, 70, 80, 80)
     #cloud
     
+    
     fill ("#F7CF88")
     rect (balloon+40, 110, 4, 50)
     rect (balloon+70, 110, 4, 50)
@@ -47,12 +55,6 @@ def draw():
     fill ("#FF0000")
     ellipse (balloon+60, 70, 130, 110)
     #HotAirBalloon
-    
-    #(x, y, width, height)
-    
-    fill ("#FFFF00")
-    ellipse (10, 10, 200, 200)
-    #sun
     
     fill ("#008000")
     rect (0, 390, 2000, 100)
